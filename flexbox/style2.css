@@ -1,0 +1,96 @@
+*{
+  margin:0;
+  padding:0;
+}
+body {
+  margin: 20px;
+}
+section {
+  margin: 20px 0;
+}
+.flex{
+  background-color: #ffffeb;
+  border: 1px solid #7c7c7c;
+  display: flex;
+  padding: 15px;
+}
+.flex li{
+  border: 1px solid #3a3a3a;
+  background-color: #78beef;
+  width: 100px;
+  list-style-type: none;
+  padding: 10px;
+}
+/*align-self*/
+.no7 .flex li:nth-child(1){
+  align-self: stretch;
+}
+.no7 .flex li:nth-child(2){
+  align-self: self-start;
+}
+.no7 .flex li:nth-child(3){
+  align-self: baseline;  /*無效果*/
+}
+.no7 .flex li:nth-child(4){
+  align-self: center;
+}
+.no7 .flex li:nth-child(5){
+  align-self:self-end;
+}
+
+/*order*/
+.no8 .flex li:nth-child(1){
+  order: 1;
+}
+.no8 .flex li:nth-child(2){
+  order: 6;
+}
+.no8 .flex li:nth-child(3){
+  order: 5;
+}
+.no8 .flex li:nth-child(4){
+  order: 3;
+}
+.no8 .flex li:nth-child(5){
+  order: 2;
+}
+.no8 .flex li:nth-child(6){
+  order: 4;
+}
+
+/*flex-grow*/
+.no9 .grow1 li:nth-child(1){
+  width: 200px;
+  flex-grow: 1;
+}
+.no9 .grow1 li:nth-child(2){
+  width: 400px;
+  flex-grow: 2;
+}
+.no9 .grow2 li:nth-child(2){
+  width: auto;
+  flex-grow: 1;
+}
+/*flex-shrink*/
+.no10 .flex li{
+  width: 200px;
+}
+.no10 .flex li:nth-child(1){
+  flex-shrink: 0;
+}
+.no10 .flex li:nth-child(2){
+  flex-shrink: 1;
+}
+.no10 .flex li:nth-child(3){
+  flex-shrink: 3;
+}
+/*flex-basis*/
+.no11 .flex{
+  flex-direction: column;
+}
+.no11 .flex li:nth-child(1){
+  width: 200px;
+}
+.no11 .flex li:nth-child(2){
+  flex-basis: 300px;
+}

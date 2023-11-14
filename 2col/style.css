@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/* CSS Document */
+*{
+  margin:0;
+  padding:0;
+}
+#wrap{
+  width: 800px;
+  background-color: #f5f5dc;
+  margin: 0 auto;
+}
+#header{
+  background-color: #f1b4b6;
+}
+#content{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+#main{
+  background-color: #98fb98;
+  width: 500px;
+}
+#side{
+  background-color: #87ceeb;
+  width: 290px;
+}
+#footer{
+  background-color: #ffd700;
+  clear: both;
+}

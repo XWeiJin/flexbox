@@ -1,0 +1,81 @@
+*{
+  margin:0;
+  padding:0;
+}
+body {
+  margin: 20px;
+}
+section {
+  margin: 20px 0;
+}
+.flex{
+  background-color: #ffffeb;
+  border: 1px solid #7c7c7c;
+  display: flex;
+}
+.no1 .flex{
+  padding: 15px;
+}
+.flex li{
+  border: 1px solid #3a3a3a;
+  background-color: #78beef;
+  width: 100px;
+  list-style-type: none;
+  padding: 10px;
+}
+
+/*justify-content*/
+.no2 .flex{
+  justify-content: flex-start; /*預設值*/
+  justify-content: flex-end;
+  justify-content: center;
+  justify-content: space-between; /*剩下空間平均分配-1*/
+  justify-content: space-around; /*每一個平均*/
+  justify-content: space-evenly; /*剩下空間平均分配+1*/
+}
+
+/*aling-items*/
+.no3 .flex{
+  padding: 15px;
+  align-items: stretch; /*預設值*/
+  align-items: flex-start;
+  align-items: flex-end;
+  align-items: center;
+  align-items: baseline;
+}
+.no3 .flex .ta1{
+  font-size: xx-large;
+}
+/*flex-wrap*/
+.no4 .flex{
+  padding: 15px;
+  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
+}
+
+/*align-content*/
+.no5 .flex{
+  padding: 15px;
+  height: 500px;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-content: flex-end;
+  align-content: center;
+  align-content: space-between;
+  align-content: space-around;
+  align-content: space-evenly;
+}
+
+/*flex-direction*/
+.no6 .flex{
+  flex-direction: row;
+  flex-direction: row-reverse;
+  flex-direction: column;
+  flex-direction: column-reverse;
+
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+}
+
